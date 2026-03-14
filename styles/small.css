@@ -96,6 +96,27 @@ button {
     padding: .5rem;
 }
 
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filters button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #ccc;
+}
+
 #coursesList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
