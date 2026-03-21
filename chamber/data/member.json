@@ -1,0 +1,60 @@
+{
+  "members":[
+    {
+      "name":"Tech Solutions",
+      "address":"123 Main St",
+      "phone":"123-456-7890",
+      "website":"https://example.com",
+      "image":"business1.png",
+      "membership":3
+    },
+    {
+      "name":"Green Market",
+      "address":"456 Market St",
+      "phone":"555-222-1111",
+      "website":"https://example.com",
+      "image":"business2.png",
+      "membership":2
+    },
+    {
+      "name":"City Gym",
+      "address":"789 Fitness Ave",
+      "phone":"888-333-9999",
+      "website":"https://example.com",
+      "image":"business3.png",
+      "membership":1
+    },
+    {
+      "name":"Coffee House",
+      "address":"321 Coffee Rd",
+      "phone":"444-555-6666",
+      "website":"https://example.com",
+      "image":"business4.png",
+      "membership":2
+    },
+    {
+      "name":"Book Store",
+      "address":"654 Library St",
+      "phone":"777-888-9999",
+      "website":"https://example.com",
+      "image":"business5.png",
+      "membership":1
+    },
+    {
+      "name":"Auto Repair",
+      "address":"987 Garage Blvd",
+      "phone":"222-333-4444",
+      "website":"https://example.com",
+      "image":"business6.png",
+      "membership":3
+    },
+    {
+      "name":"Travel Agency",
+      "address":"159 Travel Ln",
+      "phone":"111-222-3333",
+      "website":"https://example.com",
+      "image":"business7.png",
+      "membership":2
+    }
+  ]
+}

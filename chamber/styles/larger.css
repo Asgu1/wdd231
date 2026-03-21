@@ -1,0 +1,21 @@
+@media (min-width:768px){
+
+nav ul{
+display:flex;
+gap:20px;
+}
+
+#menuBtn{
+display:none;
+}
+
+#members.grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.controls{
+grid-template-columns:200px 200px;
+justify-content:center;
+}
+
+}
