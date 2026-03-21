@@ -15,7 +15,6 @@ members.forEach(member => {
 const card = document.createElement("div");
 card.classList.add("card");
 
-// ⭐ destacar niveles
 if(member.membership === 3){
 card.classList.add("gold");
 }
@@ -45,11 +44,19 @@ getMembers();
 document.querySelector("#gridBtn").addEventListener("click", () => {
 container.classList.add("grid");
 container.classList.remove("list");
+
+document.querySelectorAll(".card img").forEach(img => {
+img.style.display = "block";
+});
 });
 
 document.querySelector("#listBtn").addEventListener("click", () => {
 container.classList.add("list");
 container.classList.remove("grid");
+
+document.querySelectorAll(".card img").forEach(img => {
+img.style.display = "none";
+});
 });
 
 
