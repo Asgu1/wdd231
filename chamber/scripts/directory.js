@@ -1,28 +1,28 @@
 const url = "data/members.json";
 const container = document.querySelector("#members");
 
-async function getMembers(){
-const response = await fetch(url);
-const data = await response.json();
-displayMembers(data.members);
+async function getMembers() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembers(data.members);
 }
 
-function displayMembers(members){
-container.innerHTML = "";
+function displayMembers(members) {
+    container.innerHTML = "";
 
-members.forEach(member => {
+    members.forEach(member => {
 
-const card = document.createElement("div");
-card.classList.add("card");
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-if(member.membership === 3){
-card.classList.add("gold");
-}
-else if(member.membership === 2){
-card.classList.add("silver");
-}
+        if (member.membership === 3) {
+            card.classList.add("gold");
+        }
+        else if (member.membership === 2) {
+            card.classList.add("silver");
+        }
 
-card.innerHTML = `
+        card.innerHTML = `
 <img src="images/${member.image}" alt="${member.name}">
 <div>
 <h3>${member.name}</h3>
@@ -32,9 +32,9 @@ card.innerHTML = `
 </div>
 `;
 
-container.appendChild(card);
+        container.appendChild(card);
 
-});
+    });
 }
 
 getMembers();
@@ -42,21 +42,21 @@ getMembers();
 
 // TOGGLE VIEW
 document.querySelector("#gridBtn").addEventListener("click", () => {
-container.classList.add("grid");
-container.classList.remove("list");
+    container.classList.add("grid");
+    container.classList.remove("list");
 
-document.querySelectorAll(".card img").forEach(img => {
-img.style.display = "block";
-});
+    document.querySelectorAll(".card img").forEach(img => {
+        img.style.display = "block";
+    });
 });
 
 document.querySelector("#listBtn").addEventListener("click", () => {
-container.classList.add("list");
-container.classList.remove("grid");
+    container.classList.add("list");
+    container.classList.remove("grid");
 
-document.querySelectorAll(".card img").forEach(img => {
-img.style.display = "none";
-});
+    document.querySelectorAll(".card img").forEach(img => {
+        img.style.display = "none";
+    });
 });
 
 
@@ -65,7 +65,7 @@ const menuBtn = document.querySelector("#menuBtn");
 const menu = document.querySelector("#menu");
 
 menuBtn.addEventListener("click", () => {
-menu.classList.toggle("open");
+    menu.classList.toggle("open");
 });
 
 
