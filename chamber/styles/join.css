@@ -1,0 +1,305 @@
+/* ═══════════════════════════════════════════════════════
+   JOIN PAGE – join.css
+   Add this file to: styles/join.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Page layout ── */
+.join-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.join-intro {
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ── FORM ── */
+.form-section {
+    background: #fff;
+    border: 1px solid #dce3ec;
+    border-radius: 10px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-section label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 0.95rem;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section select,
+.form-section textarea {
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #bcc8d8;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #f9fbfd;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    outline: none;
+    border-color: #1e3a5f;
+    box-shadow: 0 0 0 3px rgba(30,58,95,0.12);
+    background: #fff;
+}
+
+.form-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-section input[type="submit"] {
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.form-section input[type="submit"]:hover {
+    background: #2a4f80;
+}
+
+/* ── MEMBERSHIP CARDS ── */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-cards h2 {
+    color: #1e3a5f;
+    margin: 0 0 0.5rem;
+}
+
+.level-card {
+    border: 2px solid #bcc8d8;
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* ── Entry animations (staggered) ── */
+#card-np     { animation: slideIn 0.5s ease 0.1s forwards; border-color: #5a9e6f; }
+#card-bronze { animation: slideIn 0.5s ease 0.3s forwards; border-color: #cd7f32; }
+#card-silver { animation: slideIn 0.5s ease 0.5s forwards; border-color: #a8a8a8; }
+#card-gold   { animation: slideIn 0.5s ease 0.7s forwards; border-color: gold;    background: #fffbea; }
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-card h3 {
+    margin: 0;
+    color: #1e3a5f;
+    font-size: 1.05rem;
+}
+
+.level-card p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.level-card .price {
+    font-weight: bold;
+    color: #1e3a5f;
+    font-size: 1rem;
+}
+
+.info-btn {
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.info-btn:hover {
+    background: #2a4f80;
+}
+
+/* ── MODALS ── */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.45);
+}
+
+dialog h2 {
+    margin: 0 0 1rem;
+    color: #1e3a5f;
+    font-size: 1.2rem;
+}
+
+dialog ul {
+    padding-left: 1.25rem;
+    margin: 0 0 1rem;
+}
+
+dialog ul li {
+    margin-bottom: 0.4rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+dialog p em {
+    color: #777;
+    font-size: 0.88rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #1e3a5f;
+}
+
+/* ── THANK YOU PAGE ── */
+.thankyou-main {
+    max-width: 680px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.thankyou-card {
+    background: white;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.thankyou-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.thankyou-card h1 {
+    color: #1e3a5f;
+    margin: 0 0 0.5rem;
+}
+
+.thankyou-subtitle {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.submission-summary {
+    background: #f0f4f8;
+    border-left: 4px solid #1e3a5f;
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.submission-summary h2 {
+    color: #1e3a5f;
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #1e3a5f;
+    font-size: 0.9rem;
+}
+
+dd {
+    margin: 0;
+    color: #333;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+/* ── RESPONSIVE: larger screens ── */
+@media (min-width: 768px) {
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .form-section {
+        flex: 1 1 55%;
+    }
+
+    .membership-cards {
+        flex: 0 0 38%;
+    }
+}
