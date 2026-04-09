@@ -1,250 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 231 Individual Project Site Plan – a structured blueprint for a personal web project." />
-  <meta name="author" content="Aarón Gutiérrez" />
-  <title>WDD 231 – Site Plan | Aarón Gutiérrez</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="siteplan.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="WDD 231 Individual Project Site Plan – a structured blueprint for a personal web project." />
+    <meta name="author" content="Aarón Gutiérrez" />
+    <title>WDD 231 – Site Plan | Aarón Gutiérrez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/siteplan.css" />
 </head>
+
 <body>
 
-  <header>
-    <p class="course-tag">WDD 231 – Web Frontend Development</p>
-    <h1>Individual Project Site Plan</h1>
-    <p>Prepared by: <strong style="color:var(--color-secondary);">Aarón Gutiérrez</strong></p>
-  </header>
+    <header>
+        <p class="course-tag">WDD 231 – Web Frontend Development</p>
+        <h1>Individual Project Site Plan</h1>
+        <p>Prepared by: <strong style="color:var(--color-secondary);">Aarón Gutiérrez</strong></p>
+    </header>
 
-  <main>
+    <main>
 
-    <!-- ========================
+        <!-- ========================
          1. SITE NAME
          ======================== -->
-    <section class="section" aria-labelledby="site-name-heading">
-      <p class="section-label">Section 1</p>
-      <h2 id="site-name-heading">Site Name</h2>
+        <section class="section" aria-labelledby="site-name-heading">
+            <p class="section-label">Section 1</p>
+            <h2 id="site-name-heading">Site Name</h2>
 
-      <div class="site-name-display">Auto Care Workshop</div>
-      <p>
-        <strong>Reason:</strong> The name <em>Auto Care Workshop</em> is direct, professional, and immediately
-        communicates what the business offers — automotive care and repair services. It is easy to remember,
-        search-friendly, and conveys a sense of hands-on, reliable service that customers expect from a local
-        mechanic shop.
-      </p>
-      <p>
-        <span class="domain-badge">Optional domain: autocareworkshop.com</span>
-      </p>
-    </section>
+            <div class="site-name-display">Auto Care Workshop</div>
+            <p>
+                <strong>Reason:</strong> The name <em>Auto Care Workshop</em> is direct, professional, and immediately
+                communicates what the business offers — automotive care and repair services. It is easy to remember,
+                search-friendly, and conveys a sense of hands-on, reliable service that customers expect from a local
+                mechanic shop.
+            </p>
+            <p>
+                <span class="domain-badge">Optional domain: autocareworkshop.com</span>
+            </p>
+        </section>
 
-    <!-- ========================
+        <!-- ========================
          2. SITE PURPOSE
          ======================== -->
-    <section class="section" aria-labelledby="site-purpose-heading">
-      <p class="section-label">Section 2</p>
-      <h2 id="site-purpose-heading">Site Purpose</h2>
+        <section class="section" aria-labelledby="site-purpose-heading">
+            <p class="section-label">Section 2</p>
+            <h2 id="site-purpose-heading">Site Purpose</h2>
 
-      <p>
-        <em>Auto Care Workshop</em> is a local auto repair shop website designed to showcase the business's
-        services, build customer trust, and make it easy for clients to get in touch. The site includes three
-        pages: a <strong>home page</strong> with a welcome section, featured services, and business hours;
-        a <strong>services page</strong> listing available repairs — such as oil changes, brake inspection,
-        engine diagnostics, and tire rotation — with descriptions and pricing; and a <strong>contact page</strong>
-        with an appointment scheduling form, the shop's location, phone number, and social media links.
-        Service data is loaded dynamically from a local JSON file to generate cards for each repair offering.
-      </p>
-    </section>
+            <p>
+                <em>Auto Care Workshop</em> is a local auto repair shop website designed to showcase the business's
+                services, build customer trust, and make it easy for clients to get in touch. The site includes three
+                pages: a <strong>home page</strong> with a welcome section, featured services, and business hours;
+                a <strong>services page</strong> listing available repairs — such as oil changes, brake inspection,
+                engine diagnostics, and tire rotation — with descriptions and pricing; and a <strong>contact
+                    page</strong>
+                with an appointment scheduling form, the shop's location, phone number, and social media links.
+                Service data is loaded dynamically from a local JSON file to generate cards for each repair offering.
+            </p>
+        </section>
 
-    <!-- ========================
+        <!-- ========================
          3. SCENARIOS
          ======================== -->
-    <section class="section" aria-labelledby="scenarios-heading">
-      <p class="section-label">Section 3</p>
-      <h2 id="scenarios-heading">Scenarios</h2>
-      <p>These questions represent typical visitors to the site and guide the site's content decisions:</p>
+        <section class="section" aria-labelledby="scenarios-heading">
+            <p class="section-label">Section 3</p>
+            <h2 id="scenarios-heading">Scenarios</h2>
+            <p>These questions represent typical visitors to the site and guide the site's content decisions:</p>
 
-      <div class="scenario" role="blockquote">
-        "What types of car repairs does this shop offer, and how much do they typically cost?"
-      </div>
-      <div class="scenario" role="blockquote">
-        "How can I schedule an appointment for an oil change or brake inspection?"
-      </div>
-      <div class="scenario" role="blockquote">
-        "Where is the shop located and what are the business hours?"
-      </div>
-    </section>
+            <div class="scenario" role="blockquote">
+                "What types of car repairs does this shop offer, and how much do they typically cost?"
+            </div>
+            <div class="scenario" role="blockquote">
+                "How can I schedule an appointment for an oil change or brake inspection?"
+            </div>
+            <div class="scenario" role="blockquote">
+                "Where is the shop located and what are the business hours?"
+            </div>
+        </section>
 
-    <!-- ========================
+        <!-- ========================
          4. COLOR SCHEME
          ======================== -->
-    <section class="section" aria-labelledby="color-heading">
-      <p class="section-label">Section 4</p>
-      <h2 id="color-heading">Color Scheme</h2>
-      <p>The palette reflects the professional and reliable feel of an automotive workshop — deep navy conveys trust, amber adds energy and warmth, and the neutral background keeps the focus on content.</p>
+        <section class="section" aria-labelledby="color-heading">
+            <p class="section-label">Section 4</p>
+            <h2 id="color-heading">Color Scheme</h2>
+            <p>The palette reflects the professional and reliable feel of an automotive workshop — deep navy conveys
+                trust, amber adds energy and warmth, and the neutral background keeps the focus on content.</p>
 
-      <div class="swatches">
+            <div class="swatches">
 
-        <div class="swatch-card">
-          <div class="swatch-block" style="background-color:#1B3A5C;"></div>
-          <div class="swatch-info">
-            <strong>Deep Navy</strong>
-            <span>#1B3A5C</span>
-            <em>Header, nav, section headings, buttons</em>
-          </div>
-        </div>
+                <div class="swatch-card">
+                    <div class="swatch-block" style="background-color:#1B3A5C;"></div>
+                    <div class="swatch-info">
+                        <strong>Deep Navy</strong>
+                        <span>#1B3A5C</span>
+                        <em>Header, nav, section headings, buttons</em>
+                    </div>
+                </div>
 
-        <div class="swatch-card">
-          <div class="swatch-block" style="background-color:#C17F3E;"></div>
-          <div class="swatch-info">
-            <strong>Warm Amber</strong>
-            <span>#C17F3E</span>
-            <em>Accents, links, badges, highlights, CTA borders</em>
-          </div>
-        </div>
+                <div class="swatch-card">
+                    <div class="swatch-block" style="background-color:#C17F3E;"></div>
+                    <div class="swatch-info">
+                        <strong>Warm Amber</strong>
+                        <span>#C17F3E</span>
+                        <em>Accents, links, badges, highlights, CTA borders</em>
+                    </div>
+                </div>
 
-        <div class="swatch-card">
-          <div class="swatch-block" style="background-color:#F7F4EF; border: 1px solid #DDD8CF;"></div>
-          <div class="swatch-info">
-            <strong>Warm Cream</strong>
-            <span>#F7F4EF</span>
-            <em>Page background, card backgrounds, subtle fills</em>
-          </div>
-        </div>
+                <div class="swatch-card">
+                    <div class="swatch-block" style="background-color:#F7F4EF; border: 1px solid #DDD8CF;"></div>
+                    <div class="swatch-info">
+                        <strong>Warm Cream</strong>
+                        <span>#F7F4EF</span>
+                        <em>Page background, card backgrounds, subtle fills</em>
+                    </div>
+                </div>
 
-        <div class="swatch-card">
-          <div class="swatch-block" style="background-color:#2D2D2D;"></div>
-          <div class="swatch-info">
-            <strong>Near Black</strong>
-            <span>#2D2D2D</span>
-            <em>Body text, paragraphs, footer text</em>
-          </div>
-        </div>
+                <div class="swatch-card">
+                    <div class="swatch-block" style="background-color:#2D2D2D;"></div>
+                    <div class="swatch-info">
+                        <strong>Near Black</strong>
+                        <span>#2D2D2D</span>
+                        <em>Body text, paragraphs, footer text</em>
+                    </div>
+                </div>
 
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- ========================
+        <!-- ========================
          5. TYPOGRAPHY
          ======================== -->
-    <section class="section" aria-labelledby="typography-heading">
-      <p class="section-label">Section 5</p>
-      <h2 id="typography-heading">Typography</h2>
-      <p>Two typefaces are selected — one serif for character and one sans-serif for readability.</p>
+        <section class="section" aria-labelledby="typography-heading">
+            <p class="section-label">Section 5</p>
+            <h2 id="typography-heading">Typography</h2>
+            <p>Two typefaces are selected — one serif for character and one sans-serif for readability.</p>
 
-      <div class="font-demo">
-        <p class="font-name">Font 1 — Playfair Display (Google Fonts)</p>
-        <div class="font-sample-heading">Auto Care Workshop</div>
-        <p class="font-usage">Used for: Page title (h1), section headings (h2), hero text, site logo. Provides editorial, refined character.</p>
-      </div>
+            <div class="font-demo">
+                <p class="font-name">Font 1 — Playfair Display (Google Fonts)</p>
+                <div class="font-sample-heading">Auto Care Workshop</div>
+                <p class="font-usage">Used for: Page title (h1), section headings (h2), hero text, site logo. Provides
+                    editorial, refined character.</p>
+            </div>
 
-      <div class="font-demo">
-        <p class="font-name">Font 2 — DM Sans (Google Fonts)</p>
-        <div class="font-sample-body">A lightweight, modern sans-serif ideal for body copy and navigation. Highly legible at all sizes and optimized for screen reading.</div>
-        <p class="font-usage">Used for: Body text, navigation links, form labels, captions, metadata. Clean and accessible at all weights.</p>
-      </div>
-    </section>
+            <div class="font-demo">
+                <p class="font-name">Font 2 — DM Sans (Google Fonts)</p>
+                <div class="font-sample-body">A lightweight, modern sans-serif ideal for body copy and navigation.
+                    Highly legible at all sizes and optimized for screen reading.</div>
+                <p class="font-usage">Used for: Body text, navigation links, form labels, captions, metadata. Clean and
+                    accessible at all weights.</p>
+            </div>
+        </section>
 
-    <!-- ========================
+        <!-- ========================
          6. WIREFRAMES
          ======================== -->
-    <section class="section" aria-labelledby="wireframe-heading">
-      <p class="section-label">Section 6</p>
-      <h2 id="wireframe-heading">Wireframes – Home Page</h2>
-      <p>Below are wireframe layouts for the home page in mobile and desktop/tablet views. Boxes represent content blocks — nav, hero, service cards, and footer.</p>
+        <section class="section" aria-labelledby="wireframe-heading">
+            <p class="section-label">Section 6</p>
+            <h2 id="wireframe-heading">Wireframes – Home Page</h2>
+            <p>Below are wireframe layouts for the home page in mobile and desktop/tablet views. Boxes represent content
+                blocks — nav, hero, service cards, and footer.</p>
 
-      <div class="wireframes">
+            <div class="wireframes">
 
-        <!-- MOBILE WIREFRAME -->
-        <div class="wireframe-container">
-          <p class="wireframe-label">📱 Mobile View</p>
-          <svg class="wireframe-svg" viewBox="0 0 180 380" xmlns="http://www.w3.org/2000/svg" aria-label="Mobile wireframe layout for home page" role="img">
-            <rect x="5" y="5" width="170" height="370" rx="10" fill="#FAFAFA" stroke="#1B3A5C" stroke-width="2"/>
-            <rect x="15" y="15" width="150" height="28" rx="4" fill="#1B3A5C"/>
-            <text x="90" y="33" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white">☰  Auto Care Workshop</text>
-            <rect x="15" y="50" width="150" height="70" rx="4" fill="#D1D5DB"/>
-            <text x="90" y="78" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#374151">HERO IMAGE</text>
-            <rect x="30" y="84" width="120" height="10" rx="3" fill="#C17F3E" opacity="0.6"/>
-            <text x="90" y="93" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white">Your Trusted Auto Shop</text>
-            <rect x="15" y="128" width="150" height="18" rx="4" fill="white" stroke="#1B3A5C" stroke-width="1"/>
-            <text x="90" y="141" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#9CA3AF">🔍 Search services...</text>
-            <text x="15" y="162" font-family="sans-serif" font-size="7" fill="#1B3A5C" font-weight="bold">FEATURED SERVICES</text>
-            <rect x="15" y="167" width="150" height="45" rx="4" fill="#E5E7EB"/>
-            <rect x="15" y="167" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4"/>
-            <text x="74" y="184" font-family="sans-serif" font-size="7" fill="#374151" font-weight="bold">Oil Change</text>
-            <text x="74" y="194" font-family="sans-serif" font-size="6" fill="#6B7280">Quick · $29.99</text>
-            <text x="74" y="204" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book Now]</text>
-            <rect x="15" y="218" width="150" height="45" rx="4" fill="#E5E7EB"/>
-            <rect x="15" y="218" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4"/>
-            <text x="74" y="235" font-family="sans-serif" font-size="7" fill="#374151" font-weight="bold">Brake Inspection</text>
-            <text x="74" y="245" font-family="sans-serif" font-size="6" fill="#6B7280">Safety · $0 / Free</text>
-            <text x="74" y="255" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book Now]</text>
-            <rect x="15" y="269" width="150" height="45" rx="4" fill="#E5E7EB"/>
-            <rect x="15" y="269" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4"/>
-            <text x="74" y="286" font-family="sans-serif" font-size="7" fill="#374151" font-weight="bold">Engine Diagnostics</text>
-            <text x="74" y="296" font-family="sans-serif" font-size="6" fill="#6B7280">Full Scan · $49.99</text>
-            <text x="74" y="306" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book Now]</text>
-            <rect x="15" y="320" width="150" height="30" rx="4" fill="#1B3A5C" opacity="0.85"/>
-            <text x="90" y="339" text-anchor="middle" font-family="sans-serif" font-size="6" fill="rgba(255,255,255,0.7)">Footer – Links · Attribution · Video</text>
-          </svg>
-        </div>
+                <!-- MOBILE WIREFRAME -->
+                <div class="wireframe-container">
+                    <p class="wireframe-label">📱 Mobile View</p>
+                    <svg class="wireframe-svg" viewBox="0 0 180 380" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Mobile wireframe layout for home page" role="img">
+                        <rect x="5" y="5" width="170" height="370" rx="10" fill="#FAFAFA" stroke="#1B3A5C"
+                            stroke-width="2" />
+                        <rect x="15" y="15" width="150" height="28" rx="4" fill="#1B3A5C" />
+                        <text x="90" y="33" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white">☰
+                            Auto Care Workshop</text>
+                        <rect x="15" y="50" width="150" height="70" rx="4" fill="#D1D5DB" />
+                        <text x="90" y="78" text-anchor="middle" font-family="sans-serif" font-size="8"
+                            fill="#374151">HERO IMAGE</text>
+                        <rect x="30" y="84" width="120" height="10" rx="3" fill="#C17F3E" opacity="0.6" />
+                        <text x="90" y="93" text-anchor="middle" font-family="sans-serif" font-size="6"
+                            fill="white">Your Trusted Auto Shop</text>
+                        <rect x="15" y="128" width="150" height="18" rx="4" fill="white" stroke="#1B3A5C"
+                            stroke-width="1" />
+                        <text x="90" y="141" text-anchor="middle" font-family="sans-serif" font-size="7"
+                            fill="#9CA3AF">🔍 Search services...</text>
+                        <text x="15" y="162" font-family="sans-serif" font-size="7" fill="#1B3A5C"
+                            font-weight="bold">FEATURED SERVICES</text>
+                        <rect x="15" y="167" width="150" height="45" rx="4" fill="#E5E7EB" />
+                        <rect x="15" y="167" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4" />
+                        <text x="74" y="184" font-family="sans-serif" font-size="7" fill="#374151"
+                            font-weight="bold">Oil Change</text>
+                        <text x="74" y="194" font-family="sans-serif" font-size="6" fill="#6B7280">Quick · $29.99</text>
+                        <text x="74" y="204" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book
+                            Now]</text>
+                        <rect x="15" y="218" width="150" height="45" rx="4" fill="#E5E7EB" />
+                        <rect x="15" y="218" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4" />
+                        <text x="74" y="235" font-family="sans-serif" font-size="7" fill="#374151"
+                            font-weight="bold">Brake Inspection</text>
+                        <text x="74" y="245" font-family="sans-serif" font-size="6" fill="#6B7280">Safety · $0 /
+                            Free</text>
+                        <text x="74" y="255" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book
+                            Now]</text>
+                        <rect x="15" y="269" width="150" height="45" rx="4" fill="#E5E7EB" />
+                        <rect x="15" y="269" width="50" height="45" rx="4" fill="#C17F3E" opacity="0.4" />
+                        <text x="74" y="286" font-family="sans-serif" font-size="7" fill="#374151"
+                            font-weight="bold">Engine Diagnostics</text>
+                        <text x="74" y="296" font-family="sans-serif" font-size="6" fill="#6B7280">Full Scan ·
+                            $49.99</text>
+                        <text x="74" y="306" font-family="sans-serif" font-size="6" fill="#6B7280">Duration · [Book
+                            Now]</text>
+                        <rect x="15" y="320" width="150" height="30" rx="4" fill="#1B3A5C" opacity="0.85" />
+                        <text x="90" y="339" text-anchor="middle" font-family="sans-serif" font-size="6"
+                            fill="rgba(255,255,255,0.7)">Footer – Links · Attribution · Video</text>
+                    </svg>
+                </div>
 
-        <!-- DESKTOP WIREFRAME -->
-        <div class="wireframe-container">
-          <p class="wireframe-label">🖥️ Desktop / Tablet View</p>
-          <svg class="wireframe-svg" viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg" aria-label="Desktop wireframe layout for home page" role="img">
-            <rect x="0" y="0" width="360" height="30" fill="#1B3A5C"/>
-            <text x="18" y="19" font-family="sans-serif" font-size="9" fill="white" font-weight="bold">Auto Care Workshop</text>
-            <text x="210" y="19" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">Home</text>
-            <text x="252" y="19" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">Services</text>
-            <text x="295" y="19" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">About</text>
-            <text x="325" y="19" font-family="sans-serif" font-size="8" fill="#C17F3E">Contact</text>
-            <rect x="0" y="30" width="360" height="80" fill="#D1D5DB"/>
-            <text x="180" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#374151">HERO IMAGE / BACKGROUND</text>
-            <rect x="80" y="68" width="200" height="14" rx="3" fill="#C17F3E" opacity="0.7"/>
-            <text x="180" y="79" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Your Trusted Local Auto Repair Shop</text>
-            <rect x="130" y="86" width="100" height="12" rx="3" fill="#1B3A5C" opacity="0.8"/>
-            <text x="180" y="96" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white">Book an Appointment →</text>
-            <rect x="60" y="118" width="240" height="16" rx="4" fill="white" stroke="#1B3A5C" stroke-width="1"/>
-            <text x="180" y="130" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#9CA3AF">🔍 Search services...</text>
-            <text x="12" y="150" font-family="sans-serif" font-size="7" fill="#1B3A5C" font-weight="bold">FEATURED SERVICES</text>
-            <rect x="12" y="155" width="104" height="80" rx="4" fill="#E5E7EB"/>
-            <rect x="12" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45"/>
-            <text x="64" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#374151">🔧 ICON</text>
-            <text x="20" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C" font-weight="bold">Oil Change</text>
-            <text x="20" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 30 min</text>
-            <text x="20" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price: $29.99</text>
-            <text x="20" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available · [Book Now]</text>
-            <rect x="128" y="155" width="104" height="80" rx="4" fill="#E5E7EB"/>
-            <rect x="128" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45"/>
-            <text x="180" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#374151">🔧 ICON</text>
-            <text x="136" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C" font-weight="bold">Brake Inspection</text>
-            <text x="136" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 45 min</text>
-            <text x="136" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price: Free</text>
-            <text x="136" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available · [Book Now]</text>
-            <rect x="244" y="155" width="104" height="80" rx="4" fill="#E5E7EB"/>
-            <rect x="244" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45"/>
-            <text x="296" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#374151">🔧 ICON</text>
-            <text x="252" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C" font-weight="bold">Engine Diagnostics</text>
-            <text x="252" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 1 hr</text>
-            <text x="252" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price: $49.99</text>
-            <text x="252" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available · [Book Now]</text>
-            <rect x="0" y="248" width="360" height="32" fill="#1B3A5C" opacity="0.9"/>
-            <text x="180" y="263" text-anchor="middle" font-family="sans-serif" font-size="6" fill="rgba(255,255,255,0.65)">© 2025 Auto Care Workshop · Attributions · Video Demo</text>
-            <text x="180" y="273" text-anchor="middle" font-family="sans-serif" font-size="6" fill="rgba(255,255,255,0.5)">Home · Services · About · Contact</text>
-          </svg>
-        </div>
+                <!-- DESKTOP WIREFRAME -->
+                <div class="wireframe-container">
+                    <p class="wireframe-label">🖥️ Desktop / Tablet View</p>
+                    <svg class="wireframe-svg" viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Desktop wireframe layout for home page" role="img">
+                        <rect x="0" y="0" width="360" height="30" fill="#1B3A5C" />
+                        <text x="18" y="19" font-family="sans-serif" font-size="9" fill="white" font-weight="bold">Auto
+                            Care Workshop</text>
+                        <text x="210" y="19" font-family="sans-serif" font-size="8"
+                            fill="rgba(255,255,255,0.75)">Home</text>
+                        <text x="252" y="19" font-family="sans-serif" font-size="8"
+                            fill="rgba(255,255,255,0.75)">Services</text>
+                        <text x="295" y="19" font-family="sans-serif" font-size="8"
+                            fill="rgba(255,255,255,0.75)">About</text>
+                        <text x="325" y="19" font-family="sans-serif" font-size="8" fill="#C17F3E">Contact</text>
+                        <rect x="0" y="30" width="360" height="80" fill="#D1D5DB" />
+                        <text x="180" y="62" text-anchor="middle" font-family="sans-serif" font-size="9"
+                            fill="#374151">HERO IMAGE / BACKGROUND</text>
+                        <rect x="80" y="68" width="200" height="14" rx="3" fill="#C17F3E" opacity="0.7" />
+                        <text x="180" y="79" text-anchor="middle" font-family="sans-serif" font-size="7"
+                            fill="white">Your Trusted Local Auto Repair Shop</text>
+                        <rect x="130" y="86" width="100" height="12" rx="3" fill="#1B3A5C" opacity="0.8" />
+                        <text x="180" y="96" text-anchor="middle" font-family="sans-serif" font-size="6"
+                            fill="white">Book an Appointment →</text>
+                        <rect x="60" y="118" width="240" height="16" rx="4" fill="white" stroke="#1B3A5C"
+                            stroke-width="1" />
+                        <text x="180" y="130" text-anchor="middle" font-family="sans-serif" font-size="6.5"
+                            fill="#9CA3AF">🔍 Search services...</text>
+                        <text x="12" y="150" font-family="sans-serif" font-size="7" fill="#1B3A5C"
+                            font-weight="bold">FEATURED SERVICES</text>
+                        <rect x="12" y="155" width="104" height="80" rx="4" fill="#E5E7EB" />
+                        <rect x="12" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45" />
+                        <text x="64" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5"
+                            fill="#374151">🔧 ICON</text>
+                        <text x="20" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C"
+                            font-weight="bold">Oil Change</text>
+                        <text x="20" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 30
+                            min</text>
+                        <text x="20" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price:
+                            $29.99</text>
+                        <text x="20" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available · [Book
+                            Now]</text>
+                        <rect x="128" y="155" width="104" height="80" rx="4" fill="#E5E7EB" />
+                        <rect x="128" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45" />
+                        <text x="180" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5"
+                            fill="#374151">🔧 ICON</text>
+                        <text x="136" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C"
+                            font-weight="bold">Brake Inspection</text>
+                        <text x="136" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 45
+                            min</text>
+                        <text x="136" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price:
+                            Free</text>
+                        <text x="136" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available ·
+                            [Book Now]</text>
+                        <rect x="244" y="155" width="104" height="80" rx="4" fill="#E5E7EB" />
+                        <rect x="244" y="155" width="104" height="28" rx="4" fill="#C17F3E" opacity="0.45" />
+                        <text x="296" y="174" text-anchor="middle" font-family="sans-serif" font-size="6.5"
+                            fill="#374151">🔧 ICON</text>
+                        <text x="252" y="196" font-family="sans-serif" font-size="7" fill="#1B3A5C"
+                            font-weight="bold">Engine Diagnostics</text>
+                        <text x="252" y="207" font-family="sans-serif" font-size="5.5" fill="#6B7280">⏱ Duration: 1
+                            hr</text>
+                        <text x="252" y="216" font-family="sans-serif" font-size="5.5" fill="#6B7280">💲 Price:
+                            $49.99</text>
+                        <text x="252" y="225" font-family="sans-serif" font-size="5.5" fill="#6B7280">✅ Available ·
+                            [Book Now]</text>
+                        <rect x="0" y="248" width="360" height="32" fill="#1B3A5C" opacity="0.9" />
+                        <text x="180" y="263" text-anchor="middle" font-family="sans-serif" font-size="6"
+                            fill="rgba(255,255,255,0.65)">© 2025 Auto Care Workshop · Attributions · Video Demo</text>
+                        <text x="180" y="273" text-anchor="middle" font-family="sans-serif" font-size="6"
+                            fill="rgba(255,255,255,0.5)">Home · Services · About · Contact</text>
+                    </svg>
+                </div>
 
-      </div>
-    </section>
+            </div>
+        </section>
 
-  </main>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Aarón Gutiérrez · WDD 231 Individual Project Site Plan</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Aarón Gutiérrez · WDD 231 Individual Project Site Plan</p>
+    </footer>
 
 </body>
+
 </html>
