@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse all auto repair services at Auto Care Workshop – brakes, engine, tires, electrical, and maintenance. View pricing and book online." />
+    <meta name="author" content="Aarón Gutiérrez" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Services | Auto Care Workshop" />
+    <meta property="og:description"
+        content="Browse all 17 auto repair services with pricing, duration, and availability." />
+    <meta property="og:image" content="images/og-services.jpg" />
+    <meta property="og:type" content="website" />
+
+    <title>Services | Auto Care Workshop</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <!-- ── HEADER ── -->
+    <header>
+        <div class="logo">
+            <img src="images/favicon.svg" alt="Auto Care Workshop logo" width="36" height="36" loading="lazy" />
+            <span class="brand">Auto Care Workshop</span>
+        </div>
+
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav id="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ── PAGE HERO ── -->
+        <section class="page-hero" aria-label="Services page banner">
+            <h1>Our Services</h1>
+            <p>Quality repairs and maintenance you can count on — every time.</p>
+        </section>
+
+        <!-- ── FILTERS ── -->
+        <section class="filter-section" aria-label="Filter services by category">
+            <div class="filter-buttons" role="group" aria-label="Category filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="Maintenance">Maintenance</button>
+                <button class="filter-btn" data-category="Brakes">Brakes</button>
+                <button class="filter-btn" data-category="Engine">Engine</button>
+                <button class="filter-btn" data-category="Tires">Tires</button>
+                <button class="filter-btn" data-category="Electrical">Electrical</button>
+            </div>
+            <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        </section>
+
+        <!-- ── SERVICE CARDS ── -->
+        <section class="all-services" aria-labelledby="allServicesHeading">
+            <h2 id="allServicesHeading" class="sr-only">All Services</h2>
+            <div id="allServiceCards" class="cards-grid">
+                <!-- Populated by services.js -->
+            </div>
+            <p id="noResults" class="no-results hidden">No services found for this category.</p>
+        </section>
+
+    </main>
+
+    <!-- ── MODAL ── -->
+    <dialog id="serviceModal" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="modalClose" aria-label="Close dialog">✕</button>
+        <div id="modalBody"><!-- Populated by modal.js --></div>
+    </dialog>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+            <a href="#" id="videoLink">Video Demo</a>
+        </div>
+        <p>© <span id="currentyear"></span> Auto Care Workshop · Aarón Gutiérrez</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "name": "Oil Change",
+        "category": "Maintenance",
+        "price": 29.99,
+        "duration": 30,
+        "available": true,
+        "icon": "🔧",
+        "description": "Full synthetic or conventional oil change with filter replacement. Includes a complimentary 15-point inspection to keep your vehicle running smoothly."
+    },
+    {
+        "id": 2,
+        "name": "Brake Inspection",
+        "category": "Brakes",
+        "price": 0,
+        "duration": 45,
+        "available": true,
+        "icon": "🛞",
+        "description": "Free comprehensive brake inspection covering pads, rotors, calipers, and brake fluid level. We provide a written report of findings at no charge."
+    },
+    {
+        "id": 3,
+        "name": "Engine Diagnostics",
+        "category": "Engine",
+        "price": 49.99,
+        "duration": 60,
+        "available": true,
+        "icon": "⚙️",
+        "description": "Full OBD-II scan and engine diagnostic report. We identify the root cause of warning lights and performance issues with professional-grade equipment."
+    },
+    {
+        "id": 4,
+        "name": "Tire Rotation",
+        "category": "Tires",
+        "price": 19.99,
+        "duration": 30,
+        "available": true,
+        "icon": "🔄",
+        "description": "Rotate all four tires to ensure even wear and extend tire life. Includes tire pressure check and visual inspection of tread depth."
+    },
+    {
+        "id": 5,
+        "name": "Brake Pad Replacement",
+        "category": "Brakes",
+        "price": 149.99,
+        "duration": 90,
+        "available": true,
+        "icon": "🛑",
+        "description": "Replace front or rear brake pads with quality parts. Includes rotor resurfacing check and brake fluid top-off for optimal stopping power."
+    },
+    {
+        "id": 6,
+        "name": "Air Filter Replacement",
+        "category": "Maintenance",
+        "price": 24.99,
+        "duration": 15,
+        "available": true,
+        "icon": "💨",
+        "description": "Replace engine air filter to restore airflow and fuel efficiency. A clogged filter can reduce performance by up to 10%. Quick 15-minute service."
+    },
+    {
+        "id": 7,
+        "name": "Battery Replacement",
+        "category": "Electrical",
+        "price": 89.99,
+        "duration": 30,
+        "available": true,
+        "icon": "🔋",
+        "description": "Test and replace your vehicle battery. Includes battery terminal cleaning, charging system check, and proper disposal of the old battery."
+    },
+    {
+        "id": 8,
+        "name": "Wheel Alignment",
+        "category": "Tires",
+        "price": 79.99,
+        "duration": 60,
+        "available": false,
+        "icon": "📐",
+        "description": "Computer-assisted four-wheel alignment to restore proper steering angle. Prevents uneven tire wear and improves fuel economy and handling."
+    },
+    {
+        "id": 9,
+        "name": "Coolant Flush",
+        "category": "Maintenance",
+        "price": 59.99,
+        "duration": 45,
+        "available": true,
+        "icon": "💧",
+        "description": "Drain and replace engine coolant to prevent overheating and corrosion. Includes radiator cap inspection and system pressure test."
+    },
+    {
+        "id": 10,
+        "name": "Transmission Service",
+        "category": "Engine",
+        "price": 119.99,
+        "duration": 90,
+        "available": true,
+        "icon": "⛽",
+        "description": "Drain and replace transmission fluid and filter. Keeps your transmission shifting smoothly and extends its service life significantly."
+    },
+    {
+        "id": 11,
+        "name": "Spark Plug Replacement",
+        "category": "Engine",
+        "price": 69.99,
+        "duration": 60,
+        "available": true,
+        "icon": "⚡",
+        "description": "Replace worn spark plugs to restore engine performance, fuel economy, and reliable starts. Includes ignition system visual inspection."
+    },
+    {
+        "id": 12,
+        "name": "AC System Check",
+        "category": "Electrical",
+        "price": 39.99,
+        "duration": 30,
+        "available": true,
+        "icon": "❄️",
+        "description": "Inspect and test the air conditioning system including compressor, refrigerant level, and cabin filter. Keep cool all summer long."
+    },
+    {
+        "id": 13,
+        "name": "Tire Balancing",
+        "category": "Tires",
+        "price": 39.99,
+        "duration": 45,
+        "available": false,
+        "icon": "⚖️",
+        "description": "Balance all four wheels using computerized equipment to eliminate vibration and ensure a smooth, safe ride at highway speeds."
+    },
+    {
+        "id": 14,
+        "name": "Power Steering Flush",
+        "category": "Maintenance",
+        "price": 49.99,
+        "duration": 30,
+        "available": true,
+        "icon": "🚗",
+        "description": "Replace old power steering fluid to maintain responsive, effortless steering. Prevents pump wear and potential leaks over time."
+    },
+    {
+        "id": 15,
+        "name": "Alternator Replacement",
+        "category": "Electrical",
+        "price": 249.99,
+        "duration": 120,
+        "available": true,
+        "icon": "🔌",
+        "description": "Diagnose and replace a failing alternator to restore proper charging to your battery and electrical system. Includes post-installation system test."
+    },
+    {
+        "id": 16,
+        "name": "Suspension Inspection",
+        "category": "Engine",
+        "price": 34.99,
+        "duration": 45,
+        "available": true,
+        "icon": "🔩",
+        "description": "Full inspection of shocks, struts, ball joints, and tie rods. Poor suspension affects handling and tire wear — catch problems early."
+    },
+    {
+        "id": 17,
+        "name": "Wiper Blade Replacement",
+        "category": "Maintenance",
+        "price": 14.99,
+        "duration": 10,
+        "available": true,
+        "icon": "🌧️",
+        "description": "Replace front and rear wiper blades for clear visibility in rain. Quick 10-minute service using quality all-season blades."
+    }
+]

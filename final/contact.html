@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact Auto Care Workshop to book an appointment. Find our location, hours, and reach us by phone or social media." />
+    <meta name="author" content="Aarón Gutiérrez" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact | Auto Care Workshop" />
+    <meta property="og:description" content="Book an appointment or get in touch with our certified mechanics today." />
+    <meta property="og:image" content="images/og-contact.jpg" />
+    <meta property="og:type" content="website" />
+
+    <title>Contact | Auto Care Workshop</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <!-- ── HEADER ── -->
+    <header>
+        <div class="logo">
+            <img src="images/favicon.svg" alt="Auto Care Workshop logo" width="36" height="36" loading="lazy" />
+            <span class="brand">Auto Care Workshop</span>
+        </div>
+
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav id="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ── PAGE HERO ── -->
+        <section class="page-hero" aria-label="Contact page banner">
+            <h1>Get in Touch</h1>
+            <p>Book an appointment or reach out — we're happy to help.</p>
+        </section>
+
+        <div class="contact-layout">
+
+            <!-- ── APPOINTMENT FORM ── -->
+            <section class="form-section" aria-labelledby="formHeading">
+                <h2 id="formHeading">Book an Appointment</h2>
+
+                <form action="thankyou.html" method="get" id="appointmentForm" novalidate>
+
+                    <div class="field">
+                        <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name"
+                            placeholder="Aarón" />
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name"
+                            placeholder="Gutiérrez" />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required autocomplete="email"
+                            placeholder="you@example.com" />
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+593 99 123 4567" />
+                    </div>
+
+                    <div class="field">
+                        <label for="service">Service Needed <span aria-hidden="true">*</span></label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service...</option>
+                            <option value="Oil Change">Oil Change</option>
+                            <option value="Brake Inspection">Brake Inspection</option>
+                            <option value="Engine Diagnostics">Engine Diagnostics</option>
+                            <option value="Tire Rotation">Tire Rotation</option>
+                            <option value="Brake Pad Replacement">Brake Pad Replacement</option>
+                            <option value="Air Filter Replacement">Air Filter Replacement</option>
+                            <option value="Battery Replacement">Battery Replacement</option>
+                            <option value="Wheel Alignment">Wheel Alignment</option>
+                            <option value="Coolant Flush">Coolant Flush</option>
+                            <option value="Transmission Service">Transmission Service</option>
+                            <option value="Spark Plug Replacement">Spark Plug Replacement</option>
+                            <option value="AC System Check">AC System Check</option>
+                            <option value="Tire Balancing">Tire Balancing</option>
+                            <option value="Power Steering Flush">Power Steering Flush</option>
+                            <option value="Alternator Replacement">Alternator Replacement</option>
+                            <option value="Suspension Inspection">Suspension Inspection</option>
+                            <option value="Wiper Blade Replacement">Wiper Blade Replacement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Preferred Date <span aria-hidden="true">*</span></label>
+                        <input type="date" id="date" name="date" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="4"
+                            placeholder="Describe any symptoms or extra details about your vehicle..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Appointment Request →</button>
+
+                </form>
+            </section>
+
+            <!-- ── SHOP INFO ── -->
+            <aside class="shop-info" aria-label="Shop location and contact info">
+
+                <div class="info-card">
+                    <h3>📍 Location</h3>
+                    <p>Av. de las Américas 1234<br />Guayaquil, Guayas, Ecuador</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+593991234567">+593 99 123 4567</a></p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🕐 Business Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Mon – Fri</span><span>8:00 am – 6:00 pm</span></li>
+                        <li><span>Saturday</span><span>9:00 am – 3:00 pm</span></li>
+                        <li class="closed"><span>Sunday</span><span>Closed</span></li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🌐 Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+            <a href="#" id="videoLink">Video Demo</a>
+        </div>
+        <p>© <span id="currentyear"></span> Auto Care Workshop · Aarón Gutiérrez</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+
+</body>
+
+</html>
