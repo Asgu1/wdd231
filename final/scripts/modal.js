@@ -32,9 +32,12 @@ export function openModal(service) {
         ? '<span class="badge-available yes">✅ Available</span>'
         : '<span class="badge-available no">❌ Unavailable</span>';
 
+    // Update the static #modalTitle element (already in HTML for aria-labelledby)
+    const titleEl = document.querySelector('#modalTitle');
+    if (titleEl) titleEl.textContent = service.name;
+
     modalBody.innerHTML = `
     <p class="modal-icon" aria-hidden="true">${service.icon}</p>
-    <h2 id="modalTitle">${service.name}</h2>
     <div class="modal-meta">
       <span class="badge-category">${service.category}</span>
       ${avail}
